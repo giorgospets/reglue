@@ -1,0 +1,23 @@
+name: reglue
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.12
+  - pytorch=2.5.1
+  - torchvision=0.20.1
+  - pytorch-cuda=12.4
+  - tensorflow=2.18.1=cuda124*
+  - cudnn=9.12
+  - scikit-learn
+  - numpy<2.1
+  - mkl=2023.1.0
+  - intel-openmp=2023.1.0
+  - pip
+  - pip:
+    - timm==1.0.20
+    - diffusers==0.35.1
+    - accelerate==1.10.1
+    - torchdiffeq==0.2.5
+    - wandb==0.22.0
